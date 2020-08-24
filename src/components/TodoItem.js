@@ -26,7 +26,9 @@ export class TodoItem extends Component {
             }}
           />{" "}
           {title}
-          <button style={btnStyle}>x</button>
+          <button onClick={() => this.props.delTodo(id)} style={btnStyle}>
+            x
+          </button>
         </p>
       </div>
     );
